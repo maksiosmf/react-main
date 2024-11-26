@@ -16,7 +16,9 @@ export const FridgeProvider = ({ children }: PropsWithChildren<{}>) => {
         }
     ])
 
-    const addIngredient =
+    const addIngredient = (item: FridgeItem) => {
+        setData(prevData => [...prevData, item]);
+    }
 
     return (
     <FridgeContext.Provider value={{data, addIngredient: () => undefined}}>
