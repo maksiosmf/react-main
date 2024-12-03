@@ -10,6 +10,9 @@ import { Characters } from '../pages/Characters';
 import { CharacterById } from '../pages/CharacterById';
 import { FridgePage } from '../pages/FridgePage';
 import { AddProductPage } from '../pages/AddProductPage';
+import { PropsHell } from '../pages/PropsHell';
+import { FormRweguter } from '../pages/FormRweguter';
+import {PhotoaPage} from '../pages/PhotoaPage';
 
 const router = createBrowserRouter([
     {
@@ -49,6 +52,18 @@ const router = createBrowserRouter([
     {
       path: Links.ADD_PRODUCT,
       element: <AddProductPage onAddProduct={(product) => console.log(product)} />
+    },
+    {
+      path: Links.PROPS_HELL,
+      element: <PropsHell />
+    },
+    {
+      path: Links.FORMRWEGUTER,
+      element: <FormRweguter />
+    },
+    {
+      path: Links.PHOTOAPAGE,
+      element: <PhotoaPage />
     }
 ]);
 
