@@ -12,8 +12,8 @@ import { FridgePage } from '../pages/FridgePage';
 import { AddProductPage } from '../pages/AddProductPage';
 import { PropsHell } from '../pages/PropsHell';
 import { FormRweguter } from '../pages/FormRweguter';
-import {PhotoaPage} from '../pages/PhotoaPage';
-
+import { PhotoPage } from '../pages/PhotoPage';
+ 
 const router = createBrowserRouter([
     {
         path: Links.HOMEPAGE,
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
     },
     {
       path: Links.PHOTOAPAGE,
-      element: <PhotoaPage />
+      element: <PhotoPage />
     }
 ]);
 
