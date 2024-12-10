@@ -416,15 +416,30 @@ Twoim zadaniem jest stworzenie komponentu, który pobiera dane o rasach psów z 
 // export default App;
 
 
-import { Router } from "./components/Router"
-import { FridgeProvider } from "./contexts/FridgeProvider";
+// import { Router } from "./components/Router"
+// import { FridgeProvider } from "./contexts/FridgeProvider";
+// function App() {
+//   return (
+//     <div>
+//       <FridgeProvider>
+//       <Router />
+//       </FridgeProvider>
+//     </div>
+//   )
+// }
+// export default App;
+
+import { Router } from "./components/Router";
+import { CounterProvider } from "./contexts/CounterProvider";
+
 function App() {
   return (
     <div>
-      <FridgeProvider>
-      <Router />
-      </FridgeProvider>
+      <CounterProvider>
+        <Router />
+      </CounterProvider>
     </div>
-  )
+  );
 }
+
 export default App;
